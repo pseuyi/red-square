@@ -16,6 +16,9 @@ module.exports = {
       new webpack.optimize.UglifyJsPlugin()
     ] : [],
     exclude: /(node_modules|bower_components)/,
+    noParse: [
+      '/node_modules\/aframe\/dist\/aframe.js/'
+    ],
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015&presets[]=react' } //query on single line
     ]
