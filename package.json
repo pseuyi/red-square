@@ -30,11 +30,14 @@
   },
   "homepage": "https://github.com/pseuyi/scalene#readme",
   "dependencies": {
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-router": "^2.0.0",
+    "aframe": "^0.4.1",
+    "aframe-audioanalyser-component": "^3.0.1",
+    "aframe-react": "^3.4.1",
     "compression": "^1.6.2",
     "express": "^4.14.1",
-    "if-env": "^1.0.0"
+    "if-env": "^1.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0"
   }
 }
