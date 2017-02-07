@@ -1,15 +1,44 @@
-<!doctype html>
-<html ng-app>
-  <head>
-    <link rel="stylesheet" href="public/style.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-  </head>
-  <body>
-    <div id='main'>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="author" content="">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cousine|UnifrakturMaguntia" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://rawgit.com/aframevr/aframe/6e78aba/dist/aframe-master.min.js" async></script>
+	  <title></title>
+	</head>
+
+	<body>
+    <h1 id='header'></h1>
+		<a-scene>
+			<a-box
+				color="#ce3131"
+				opacity="0.7"
+				depth="7"
+				height="7"
+				width="7"
+				position="0 1 -10"
+				rotation="30 30 30">
+			</a-box>
+			<a-sky src=""></a-sky>
+
+      <a-camera
+        position="0 1 2"
+        cursor-visible="true"
+        cursor-scale="2"
+        cursor-color="#ce3131"
+        cursor-opacity="0.5">
+      </a-camera>
+
+		</a-scene>
+
+    <script src="js/app.js" defer></script>
+	</body>
+
 </html>
